@@ -12,6 +12,11 @@ body {
     position: relative;
     text-align: center;
     cursor: pointer;
+    margin-bottom: 249px;
+}
+
+.character:last-child {
+    margin-bottom: 0;
 }
 
 .character img {
