@@ -22,6 +22,8 @@
 
     <script>
         let tg = window.Telegram.WebApp;
+        tg.expand();
+        
         function sendData(data) {
             tg.sendData(data);
             tg.WebApp.close();
