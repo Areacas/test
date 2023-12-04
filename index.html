@@ -21,9 +21,10 @@
     </div>
 
     <script>
+        let tg = window.Telegram.WebApp;
         function sendData(data) {
-            Telegram.WebApp.sendData(data);
-            Telegram.WebApp.close();
+            tg.sendData(data);
+            tg.WebApp.close();
         }
     </script>
 
