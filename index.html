@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choice</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="main">
-        <h1>Марио</h1> <b>Персонаж</b>
-        <h1>Альберт Эйнштейн</h1> <b>Физик-теоретик</b>
+    <div class="character" onclick="sendData('mario')">
+        <img src="images/mario.jpg" alt="Mario">
+        <div class="name">Марио</div>
+        <div class="description">Персонаж</div>
     </div>
+        <div class="character" onclick="sendData('albert')">
+        <img src="images/albert.jpg" alt="Mario">
+        <div class="name">Альберт Эйнштейн</div>
+        <div class="description">Физик-теоретик</div>
+    </div>
+
+    <script>
+        function sendData(data) {
+            Telegram.WebApp.sendData(data);
+            Telegram.WebApp.close();
+        }
+    </script>
+
 </body>
 </html>
