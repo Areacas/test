@@ -24,11 +24,13 @@
 
     <script>
         let tg = window.Telegram.WebApp;
-        tg.expand();
+        tg.expand();        
+
+        function sendData(data) {
+            tg.sendData("test");
+        }
         
-        tg.onEvent("character", myFanction(){
-            tg.sendData("test")
-        });        
+             
     </script>
 
 </body>
