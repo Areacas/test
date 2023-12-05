@@ -25,10 +25,10 @@
     <script>
         let tg = window.Telegram.WebApp;
         tg.expand();
-
-        function sendData(data) {
-            tg.sendData(data);
-        }
+        
+        tg.onEvent("character", myFanction(){
+            sendData("test")
+        });        
     </script>
 
 </body>
