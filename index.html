@@ -10,13 +10,13 @@
 
 <body>
 <div class="character-container">
-    <div class="character" onclick='sendData("mario")'>
+    <div class="character" onclick="sendData2(12)">
         <img src="mario.jpg" alt="Mario">
         <div class="name">Марио</div>
         <div class="description">Персонаж</div>
     </div>
-    <div class="character" onclick="sendData('albert')">
-        <img src="albert.jpg" alt="Mario">
+    <div class="character" onclick="sendData2('albert')">
+        <img src="albert.jpg" alt="Albert">
         <div class="name">Альберт Эйнштейн</div>
         <div class="description">Физик-теоретик</div>
     </div>
@@ -26,7 +26,7 @@
         let tg = window.Telegram.WebApp;
         tg.expand();
         
-        function sendData(data) {
+        function sendData2(data) {
             tg.sendData(data);
             tg.close();
         }
